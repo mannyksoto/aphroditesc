@@ -513,7 +513,6 @@ Maryville, Illinois
 # =====================================================
 # FOOTER
 # =====================================================
-
 st.markdown("""
 <div class="footer">
 
@@ -521,7 +520,7 @@ Aphrodite Skin Care LLC
 
 Inspired by European skincare traditions.
 
- 2006–2026
+Copyright 2006-2026
 
 </div>
 """, unsafe_allow_html=True)
