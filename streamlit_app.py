@@ -231,6 +231,22 @@ with s3:
         unsafe_allow_html=True
     )
 
+
+# EXPERIENCE SECTION
+
+st.markdown(
+    "<div class='section-title'>Trusted Experience. Proven Results.</div>",
+    unsafe_allow_html=True
+)
+
+st.write("""
+For nearly two decades, Aphrodite Skin Care has helped clients throughout
+the Greater St. Louis region improve skin health, restore confidence,
+and achieve natural-looking aesthetic results.
+
+Every treatment plan is personalized to your goals, skin condition,
+and lifestyle.
+""")
 # ABOUT
 
 st.markdown(
