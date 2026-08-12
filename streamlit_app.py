@@ -508,17 +508,41 @@ st.markdown("""
 
 📍 4 Oak Drive, Suite B
 
-Maryville, Illinois
+<br>
+
+Maryville, Illinois 62062
+
+<br><br>
+
+📞 618-791-8980
+
+<br><br>
+
+⏰ By Appointment Only
+
+<br><br>
+
+Serving the Greater St. Louis Bi-State Area
+
+</div>
+""", unsafe_allow_html=True)
+
+st.button("Book Appointment")
 
 # =====================================================
 # FOOTER
 # =====================================================
+
 st.markdown("""
 <div class="footer">
 
 Aphrodite Skin Care LLC
 
+<br>
+
 Inspired by European skincare traditions.
+
+<br>
 
 Copyright 2006-2026
 
