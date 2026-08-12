@@ -9,205 +9,295 @@ st.set_page_config(
 # =====================================================
 # STYLING
 # =====================================================
-
 st.markdown("""
 <style>
+
+/* ================================================= */
+/* BACKGROUND */
+/* ================================================= */
 
 .stApp {
     background: linear-gradient(
         180deg,
-        #f5f9fc 0%,
-        #dde8f1 100%
+        #c7d6e6 0%,
+        #b8cada 45%,
+        #afc4db 100%
     );
 }
 
-/* GENERAL TEXT */
+/* ================================================= */
+/* GLOBAL TEXT */
+/* ================================================= */
 
-html, body, [class*="css"] {
-    color: #2f4058;
+html,
+body,
+p,
+span,
+li,
+label,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #22334D !important;
 }
 
+/* ================================================= */
 /* HERO */
+/* ================================================= */
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #355885,
+        #4d74a5
+    );
+
+    padding: 70px;
+    border-radius: 32px;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.15);
+
+    margin-bottom: 40px;
+}
 
 .hero-title {
-    font-size: 4.2rem;
+
+    color: white !important;
+
+    font-size: 5rem;
     font-weight: 800;
-    color: #466a99;
-    margin-bottom: 10px;
+
+    margin-bottom: 15px;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    color: #4c5664;
-    margin-bottom: 25px;
+
+    color: rgba(255,255,255,.9) !important;
+
+    font-size: 1.5rem;
 }
 
-.hero-box {
-    background:white;
-    padding:35px;
-    border-radius:28px;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
+.hero-description {
+
+    color: rgba(255,255,255,.85) !important;
+
+    margin-top: 25px;
+
+    font-size: 1.1rem;
 }
 
-/* CTA */
-
-.cta-box {
-    background:white;
-    padding:30px;
-    border-radius:24px;
-    border-top:5px solid #f2c94c;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
-}
-
-/* HEADINGS */
+/* ================================================= */
+/* SECTION HEADER */
+/* ================================================= */
 
 .section-title {
+
     text-align:center;
-    font-size:2.2rem;
-    font-weight:700;
-    color:#466a99;
-    margin-top:60px;
-    margin-bottom:30px;
-}
 
-/* STATS */
+    color:#243B5A !important;
 
-.stat-card {
-    background:white;
-    color:#2f4058;
-    text-align:center;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-}
+    font-size:2.6rem;
 
-.stat-number {
-    color:#f2c94c;
-    font-size:2.4rem;
     font-weight:800;
-}
 
-/* SERVICES */
+    margin-top:60px;
 
-.service-card {
-    background:white;
-    color:#2f4058;
-    padding:28px;
-    border-radius:22px;
-    text-align:center;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-    min-height:220px;
-}
-
-.service-card h3 {
-    color:#466a99;
-    margin-bottom:15px;
-}
-
-/* ABOUT */
-
-.about-card {
-    background:white;
-    color:#2f4058;
-    padding:35px;
-    border-radius:24px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.about-card h2,
-.about-card h3 {
-    color:#466a99;
-}
-
-/* FEATURE BAND */
-
-.feature-band {
-    background:#466a99;
-    color:white;
-    padding:45px;
-    text-align:center;
-    border-radius:25px;
-    margin-top:50px;
     margin-bottom:40px;
 }
 
-/* BUTTON */
+/* ================================================= */
+/* CARDS */
+/* ================================================= */
+
+.card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.08);
+
+    color:#22334D !important;
+}
+
+.card h3 {
+    color:#355885 !important;
+}
+
+/* ================================================= */
+/* STATS */
+/* ================================================= */
+
+.stat-card {
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.08);
+}
+
+.stat-number {
+
+    color:#E7BE47 !important;
+
+    font-size:2.5rem;
+
+    font-weight:800;
+}
+
+/* ================================================= */
+/* FEATURE STRIPE */
+/* ================================================= */
+
+.feature-stripe {
+
+    background:
+    linear-gradient(
+        135deg,
+        #243B5A,
+        #355885
+    );
+
+    padding:50px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    margin-top:50px;
+}
+
+.feature-stripe h2 {
+
+    color:white !important;
+}
+
+.feature-stripe p {
+
+    color:rgba(255,255,255,.9) !important;
+}
+
+/* ================================================= */
+/* CTA BOX */
+/* ================================================= */
+
+.cta-box {
+
+    background:white;
+
+    border-top:8px solid #E7BE47;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.08);
+}
+
+.cta-box * {
+
+    color:#22334D !important;
+}
+
+/* ================================================= */
+/* BUTTONS */
+/* ================================================= */
 
 .stButton button {
-    background:#f2c94c;
-    color:black;
+
+    background:#E7BE47;
+
+    color:#22334D;
+
     font-weight:700;
+
     border:none;
+
     border-radius:12px;
-    padding:12px 24px;
+
+    padding:0.75rem 1.5rem;
 }
 
 .stButton button:hover {
-    background:#e2bb44;
+
+    background:#d4ac3d;
 }
 
+/* ================================================= */
+/* CONTACT BOX */
+/* ================================================= */
+
+.contact-box {
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.08);
+}
+
+/* ================================================= */
 /* FOOTER */
+/* ================================================= */
 
 .footer {
+
     text-align:center;
-    color:#5f6672;
+
+    color:#243B5A !important;
+
     padding:40px;
+
+    font-size:1rem;
 }
 
 </style>
 """, unsafe_allow_html=True)
 
+
 # =====================================================
 # HERO
 # =====================================================
 
-left, right = st.columns([1.6, 1])
+st.markdown("""
+<div class="hero-section">
 
-with left:
+<div class="hero-title">
+Aphrodite Skin Care
+</div>
 
-    st.markdown("""
-    <div class="hero-box">
+<div class="hero-subtitle">
+Advanced Skin Care • Permanent Cosmetics • Scalp Micropigmentation
+</div>
 
-    <div class="hero-title">
-    Aphrodite Skin Care
-    </div>
+<div class="hero-description">
 
-    <div class="hero-subtitle">
-    Advanced Skin Care • Permanent Cosmetics • Scalp Micropigmentation
-    </div>
+Helping women and men look and feel their very best through
+personalized skin care treatments, permanent cosmetics,
+advanced aesthetic services, and professional training.
 
-    Helping women and men look and feel their very best through
-    personalized skin care treatments, permanent cosmetic services,
-    and professional aesthetic education.
+</div>
 
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.button("Schedule Consultation")
-
-with right:
-
-    st.markdown("""
-    <div class="cta-box">
-
-    <h3>Serving Greater St. Louis</h3>
-
-    📍 Maryville, Illinois
-
-    <br><br>
-
-    📞 618-791-8980
-
-    <br><br>
-
-    ⭐ Award Winning Practice
-
-    <br><br>
-
-    ⏰ By Appointment Only
-
-    </div>
-    """, unsafe_allow_html=True)
+</div>
+""", unsafe_allow_html=True)
 
 # =====================================================
 # STATS
@@ -243,61 +333,22 @@ for col, item in zip([c1,c2,c3,c4], stats):
 # SERVICES
 # =====================================================
 
-st.markdown(
-    "<div class='section-title'>Featured Services</div>",
-    unsafe_allow_html=True
-)
-
-s1,s2,s3 = st.columns(3)
-
 with s1:
     st.markdown("""
-    <div class="service-card">
-    <h3>Facials & Skin Care</h3>
+    <div class="card">
+
+    <h3>Facials & Clinical Skin Care</h3>
 
     Customized facials
 
     Chemical peels
 
-    Acne treatment
+    Acne treatments
 
     Anti-aging programs
 
-    Clinical skincare
-    </div>
-    """, unsafe_allow_html=True)
+    Clinical skincare therapies
 
-with s2:
-    st.markdown("""
-    <div class="service-card">
-    <h3>Permanent Cosmetics</h3>
-
-    Eyeliner
-
-    Brows
-
-    Lip procedures
-
-    Cosmetic tattooing
-
-    Enhancement services
-    </div>
-    """, unsafe_allow_html=True)
-
-with s3:
-    st.markdown("""
-    <div class="service-card">
-    <h3>Scalp Micropigmentation</h3>
-
-    Hair thinning
-
-    Alopecia
-
-    Hairline restoration
-
-    Scar camouflage
-
-    SMP training
     </div>
     """, unsafe_allow_html=True)
 
@@ -450,24 +501,14 @@ My permanent makeup turned out natural and beautiful.'
 # CONTACT
 # =====================================================
 
-st.markdown(
-    "<div class='section-title'>Contact Us</div>",
-    unsafe_allow_html=True
-)
-
 st.markdown("""
+<div class="contact-box">
+
+<h3>Contact Us</h3>
+
 📍 4 Oak Drive, Suite B
 
-Maryville, Illinois 62062
-
-📞 618-791-8980
-
-⏰ By Appointment Only
-
-Serving the Greater St. Louis Bi‑State Area
-""")
-
-st.button("Book Appointment")
+Maryville, Illinois
 
 # =====================================================
 # FOOTER
