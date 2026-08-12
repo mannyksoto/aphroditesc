@@ -29,19 +29,8 @@ st.markdown("""
 /* GLOBAL TEXT */
 /* ================================================= */
 
-html,
-body,
-p,
-span,
-li,
-label,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+html, body, p, span, li, label, div,
+h1, h2, h3, h4, h5, h6 {
     color: #22334D !important;
 }
 
@@ -50,44 +39,28 @@ h6 {
 /* ================================================= */
 
 .hero-section {
-    background: linear-gradient(
-        135deg,
-        #355885,
-        #4d74a5
-    );
-
+    background: linear-gradient(135deg, #355885, #4d74a5);
     padding: 70px;
     border-radius: 32px;
-
-    box-shadow:
-    0 20px 45px rgba(0,0,0,.15);
-
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
     margin-bottom: 40px;
 }
 
 .hero-title {
-
     color: white !important;
-
     font-size: 5rem;
     font-weight: 800;
-
     margin-bottom: 15px;
 }
 
 .hero-subtitle {
-
     color: rgba(255,255,255,.9) !important;
-
     font-size: 1.5rem;
 }
 
 .hero-description {
-
     color: rgba(255,255,255,.85) !important;
-
     margin-top: 25px;
-
     font-size: 1.1rem;
 }
 
@@ -96,18 +69,12 @@ h6 {
 /* ================================================= */
 
 .section-title {
-
-    text-align:center;
-
-    color:#243B5A !important;
-
-    font-size:2.6rem;
-
-    font-weight:800;
-
-    margin-top:60px;
-
-    margin-bottom:40px;
+    text-align: center;
+    color: #243B5A !important;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 /* ================================================= */
@@ -115,21 +82,32 @@ h6 {
 /* ================================================= */
 
 .card {
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:24px;
-
-    box-shadow:
-    0 12px 25px rgba(0,0,0,.08);
-
-    color:#22334D !important;
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
+    color: #22334D !important;
 }
 
 .card h3 {
-    color:#355885 !important;
+    color: #355885 !important;
+}
+
+/* ================================================= */
+/* ABOUT CARD  ← ADDED */
+/* ================================================= */
+
+.about-card {
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
+    color: #22334D !important;
+}
+
+.about-card h2 {
+    color: #355885 !important;
+    margin-bottom: 15px;
 }
 
 /* ================================================= */
@@ -137,58 +115,37 @@ h6 {
 /* ================================================= */
 
 .stat-card {
-
-    background:white;
-
-    border-radius:22px;
-
-    padding:25px;
-
-    text-align:center;
-
-    box-shadow:
-    0 12px 25px rgba(0,0,0,.08);
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
 }
 
 .stat-number {
-
-    color:#E7BE47 !important;
-
-    font-size:2.5rem;
-
-    font-weight:800;
+    color: #E7BE47 !important;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 /* ================================================= */
-/* FEATURE STRIPE */
+/* FEATURE STRIPE  ← FIXED CLASS NAME IN HTML BELOW */
 /* ================================================= */
 
 .feature-stripe {
-
-    background:
-    linear-gradient(
-        135deg,
-        #243B5A,
-        #355885
-    );
-
-    padding:50px;
-
-    border-radius:30px;
-
-    text-align:center;
-
-    margin-top:50px;
+    background: linear-gradient(135deg, #243B5A, #355885);
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .feature-stripe h2 {
-
-    color:white !important;
+    color: white !important;
 }
 
 .feature-stripe p {
-
-    color:rgba(255,255,255,.9) !important;
+    color: rgba(255,255,255,.9) !important;
 }
 
 /* ================================================= */
@@ -196,22 +153,15 @@ h6 {
 /* ================================================= */
 
 .cta-box {
-
-    background:white;
-
-    border-top:8px solid #E7BE47;
-
-    border-radius:24px;
-
-    padding:30px;
-
-    box-shadow:
-    0 12px 25px rgba(0,0,0,.08);
+    background: white;
+    border-top: 8px solid #E7BE47;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
 }
 
 .cta-box * {
-
-    color:#22334D !important;
+    color: #22334D !important;
 }
 
 /* ================================================= */
@@ -219,23 +169,16 @@ h6 {
 /* ================================================= */
 
 .stButton button {
-
-    background:#E7BE47;
-
-    color:#22334D;
-
-    font-weight:700;
-
-    border:none;
-
-    border-radius:12px;
-
-    padding:0.75rem 1.5rem;
+    background: #E7BE47;
+    color: #22334D;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
 }
 
 .stButton button:hover {
-
-    background:#d4ac3d;
+    background: #d4ac3d;
 }
 
 /* ================================================= */
@@ -243,15 +186,10 @@ h6 {
 /* ================================================= */
 
 .contact-box {
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:24px;
-
-    box-shadow:
-    0 12px 25px rgba(0,0,0,.08);
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
 }
 
 /* ================================================= */
@@ -259,14 +197,10 @@ h6 {
 /* ================================================= */
 
 .footer {
-
-    text-align:center;
-
-    color:#243B5A !important;
-
-    padding:40px;
-
-    font-size:1rem;
+    text-align: center;
+    color: #243B5A !important;
+    padding: 40px;
+    font-size: 1rem;
 }
 
 </style>
@@ -279,25 +213,18 @@ h6 {
 
 st.markdown("""
 <div class="hero-section">
-
-<div class="hero-title">
-Aphrodite Skin Care
-</div>
-
-<div class="hero-subtitle">
-Advanced Skin Care • Permanent Cosmetics • Scalp Micropigmentation
-</div>
-
-<div class="hero-description">
-
-Helping women and men look and feel their very best through
-personalized skin care treatments, permanent cosmetics,
-advanced aesthetic services, and professional training.
-
-</div>
-
+    <div class="hero-title">Aphrodite Skin Care</div>
+    <div class="hero-subtitle">
+        Advanced Skin Care • Permanent Cosmetics • Scalp Micropigmentation
+    </div>
+    <div class="hero-description">
+        Helping women and men look and feel their very best through
+        personalized skin care treatments, permanent cosmetics,
+        advanced aesthetic services, and professional training.
+    </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 # =====================================================
 # STATS
@@ -308,19 +235,17 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-c1,c2,c3,c4 = st.columns(4)
+c1, c2, c3, c4 = st.columns(4)
 
 stats = [
-    ("20+","Years Experience"),
-    ("2006","Established"),
-    ("10+","Award Years"),
-    ("IL / MO","Licensed")
+    ("20+", "Years Experience"),
+    ("2006", "Established"),
+    ("10+", "Award Years"),
+    ("IL / MO", "Licensed")
 ]
 
-for col, item in zip([c1,c2,c3,c4], stats):
-
+for col, item in zip([c1, c2, c3, c4], stats):
     with col:
-
         st.markdown(f"""
         <div class="stat-card">
             <div class="stat-number">{item[0]}</div>
@@ -329,28 +254,60 @@ for col, item in zip([c1,c2,c3,c4], stats):
         </div>
         """, unsafe_allow_html=True)
 
+
 # =====================================================
-# SERVICES
+# SERVICES  ← FIXED: defined s1, s2, s3 columns
 # =====================================================
+
+st.markdown(
+    "<div class='section-title'>Our Services</div>",
+    unsafe_allow_html=True
+)
+
+s1, s2, s3 = st.columns(3)
 
 with s1:
     st.markdown("""
     <div class="card">
-
-    <h3>Facials & Clinical Skin Care</h3>
-
-    Customized facials
-
-    Chemical peels
-
-    Acne treatments
-
-    Anti-aging programs
-
-    Clinical skincare therapies
-
+        <h3>Facials & Clinical Skin Care</h3>
+        <ul>
+            <li>Customized facials</li>
+            <li>Chemical peels</li>
+            <li>Acne treatments</li>
+            <li>Anti-aging programs</li>
+            <li>Clinical skincare therapies</li>
+        </ul>
     </div>
     """, unsafe_allow_html=True)
+
+with s2:
+    st.markdown("""
+    <div class="card">
+        <h3>Permanent Cosmetics</h3>
+        <ul>
+            <li>Microblading</li>
+            <li>Powder brows</li>
+            <li>Eyeliner</li>
+            <li>Lip blush</li>
+            <li>Cosmetic corrections</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+with s3:
+    st.markdown("""
+    <div class="card">
+        <h3>Scalp Micropigmentation</h3>
+        <ul>
+            <li>Alopecia coverage</li>
+            <li>Hairline restoration</li>
+            <li>Scar camouflage</li>
+            <li>Density enhancement</li>
+            <li>Male & female patterns</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 # =====================================================
 # EXPERIENCE
@@ -370,6 +327,7 @@ Every treatment plan is customized to individual goals,
 skin conditions, and lifestyle.
 """)
 
+
 # =====================================================
 # CONDITIONS
 # =====================================================
@@ -379,10 +337,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-left,right = st.columns(2)
+left, right = st.columns(2)
 
 with left:
-
     st.markdown("""
     ✅ Acne
 
@@ -398,7 +355,6 @@ with left:
     """)
 
 with right:
-
     st.markdown("""
     ✅ Alopecia
 
@@ -413,6 +369,7 @@ with right:
     ✅ Cosmetic Corrections
     """)
 
+
 # =====================================================
 # ABOUT
 # =====================================================
@@ -424,29 +381,20 @@ st.markdown(
 
 st.markdown("""
 <div class="about-card">
-
-<h2>Master Esthetician & Permanent Cosmetics Instructor</h2>
-
-Nadiya combines European aesthetic traditions with modern
-skin care science to provide personalized treatments designed
-to deliver real results.
-
-<br><br>
-
-• Licensed in Illinois, Missouri, and Europe
-
-• Director of Education
-
-• Permanent Cosmetics Instructor
-
-• Acne & Anti-Aging Specialist
-
-• Scalp Micropigmentation Training
-
-• Serving Greater St. Louis Since 2006
-
+    <h2>Master Esthetician & Permanent Cosmetics Instructor</h2>
+    Nadiya combines European aesthetic traditions with modern
+    skin care science to provide personalized treatments designed
+    to deliver real results.
+    <br><br>
+    • Licensed in Illinois, Missouri, and Europe<br>
+    • Director of Education<br>
+    • Permanent Cosmetics Instructor<br>
+    • Acne & Anti-Aging Specialist<br>
+    • Scalp Micropigmentation Training<br>
+    • Serving Greater St. Louis Since 2006
 </div>
 """, unsafe_allow_html=True)
+
 
 # =====================================================
 # TRAINING ACADEMY
@@ -464,22 +412,21 @@ small class sizes, certification, starter kits,
 and post-graduation support.
 """)
 
+
 # =====================================================
-# BLUE FEATURE SECTION
+# BLUE FEATURE SECTION  ← FIXED: feature-band → feature-stripe
 # =====================================================
 
 st.markdown("""
-<div class="feature-band">
-
-<h2>
-Great Skin Starts With Great Skin Care
-</h2>
-
-Helping clients achieve confidence through advanced skin care,
-permanent cosmetics, and personalized treatment plans.
-
+<div class="feature-stripe">
+    <h2>Great Skin Starts With Great Skin Care</h2>
+    <p>
+        Helping clients achieve confidence through advanced skin care,
+        permanent cosmetics, and personalized treatment plans.
+    </p>
 </div>
 """, unsafe_allow_html=True)
+
 
 # =====================================================
 # TESTIMONIAL
@@ -497,37 +444,27 @@ st.success("""
 My permanent makeup turned out natural and beautiful.'
 """)
 
+
 # =====================================================
 # CONTACT
 # =====================================================
 
 st.markdown("""
 <div class="contact-box">
-
-<h3>Contact Us</h3>
-
-📍 4 Oak Drive, Suite B
-
-<br>
-
-Maryville, Illinois 62062
-
-<br><br>
-
-📞 618-791-8980
-
-<br><br>
-
-⏰ By Appointment Only
-
-<br><br>
-
-Serving the Greater St. Louis Bi-State Area
-
+    <h3>Contact Us</h3>
+    📍 4 Oak Drive, Suite B<br>
+    Maryville, Illinois 62062
+    <br><br>
+    📞 618-791-8980
+    <br><br>
+    ⏰ By Appointment Only
+    <br><br>
+    Serving the Greater St. Louis Bi-State Area
 </div>
 """, unsafe_allow_html=True)
 
 st.button("Book Appointment")
+
 
 # =====================================================
 # FOOTER
@@ -535,16 +472,8 @@ st.button("Book Appointment")
 
 st.markdown("""
 <div class="footer">
-
-Aphrodite Skin Care LLC
-
-<br>
-
-Inspired by European skincare traditions.
-
-<br>
-
-Copyright 2006-2026
-
+    Aphrodite Skin Care LLC<br>
+    Inspired by European skincare traditions.<br>
+    Copyright 2006-2026
 </div>
 """, unsafe_allow_html=True)
